@@ -1,0 +1,9 @@
+.box {
+  display: inline-block;
+  border: 1px solid red;
+  /* visibility: hidden; */
+}
+/* inline-block
+su ket hop giua inline va block
+inline : nam tren 1 dong va chieu rong mac dinh theo noi dung
+block: set duoc width va height padding margin top bot */

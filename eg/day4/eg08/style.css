@@ -1,0 +1,13 @@
+/* dong dau tien chiu tac dong cua chieu dai trinh duyet */
+p::first-line {
+  color: red;
+}
+p::first-letter {
+  color: green;
+  font-size: 100px;
+}
+/* chon van ban  */
+p::selection {
+  color: violet;
+  background-color: black;
+}

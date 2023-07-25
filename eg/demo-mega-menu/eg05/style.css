@@ -1,0 +1,51 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.menu {
+  background-color: springgreen;
+}
+.menu > ul {
+  max-width: 1400px;
+  font-size: 0;
+  margin: 0 auto;
+}
+
+.menu > ul > li {
+  display: inline-block;
+}
+.menu li {
+  position: relative;
+}
+.menu a {
+  font-size: 1rem;
+  padding: 5px 15px;
+  display: block;
+  color: aliceblue;
+}
+.menu > ul li:hover > a {
+  background-color: red;
+}
+.menu > ul ul {
+  display: none;
+  background-color: blueviolet;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 150px;
+}
+.menu > ul li:hover > ul {
+  display: block;
+}
+.menu > ul ul ul {
+  top: 0;
+  left: 100%;
+}

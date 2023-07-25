@@ -1,0 +1,17 @@
+.btn:hover {
+  color: red;
+}
+.btn:active {
+  color: green;
+}
+.btn:focus {
+  color: violet;
+}
+/* su khac nhau giua hover focus active 
+ton tai trong nhung the nao
+lam sao de focus ton tai trong all the */
+
+/* hover dua chuot vao 
+ active bam vao
+ focus con tro chuot dang dat o btn do  */
+/* focus chi ton tai trong form va co the bien thanh phan khac thanh focus su dung tabindex */

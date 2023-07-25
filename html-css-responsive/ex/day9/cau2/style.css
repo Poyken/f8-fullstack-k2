@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: url(../../../image/cursor-pointer.png), auto;
+}
+@font-face {
+  font-family: SpaceGrotesk;
+  src: url(../../../Roboto/SpaceGrotesk-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: Inter;
+  src: url(../../../Roboto/Inter-VariableFont_slnt_wght.ttf);
+}
+body {
+  cursor: url(../../../image/cursor-default.png), auto;
+}
+p {
+  cursor: url(../../../image/cursor-text.png), auto;
+}
+.box {
+  display: flex;
+  border: 1px solid #ddd;
+  flex-direction: column;
+  /* margin-bottom: 50px; */
+  position: relative;
+}
+.page {
+  font-family: sans-serif;
+  display: flex;
+  margin: 30px 150px;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-evenly;
+}
+.box {
+  width: 380px;
+  height: 300px;
+  border: 1px solid #ddd;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+.box > * {
+  padding: 5px;
+  /* padding: 10px 20px 10px 50px; */
+}
+.icon {
+  font-size: 50px;
+  /* padding: 30px 30px 10px 50px; */
+  padding-bottom: 20px;
+  padding-left: 20px;
+}
+.title a {
+  font-weight: bold;
+  font-family: SpaceGrotesk;
+  font-size: 22px;
+}
+.content {
+  opacity: 0.5;
+  font-family: Inter;
+  padding-bottom: 50px;
+}
+.btn {
+  color: white;
+}
+.box:hover {
+  transition: all 0.3s ease;
+  background-color: #b08879;
+  color: white;
+}
+.box:hover .btn {
+  transition: all 0.3s linear;
+  translate: 0 0;
+}
+.box:hover .icon {
+  transition: all 0.3s ease;
+  font-size: 0px;
+}
+.box:hover .title {
+  transition: all 0.3s ease;
+  translate: 0 -20px;
+}
+.box:hover .content {
+  opacity: 1;
+  transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  translate: 0 -10px;
+}
+.box:not(:hover) .content {
+  transition: all 0.3s ease;
+}
+.btn {
+  cursor: url(../../../image/cursor-pointer.png), auto;
+}
+.box:hover .btn i {
+  padding: 10px;
+  border-radius: 99px;
+  border: 1px solid rgba(255, 255, 255, 0.148);
+}
+.box:hover .btn i:hover {
+  background-color: white;
+  color: #b08879;
+}
+.line {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #ccc;
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+}
+.box:hover .line {
+  transform: scale(90%, 90%);
+  transition: all 0.3s ease;
+}

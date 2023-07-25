@@ -1,0 +1,33 @@
+:root {
+  --primary-background-color: red;
+}
+$footercopyright: ".copyright";
+$property: color;
+$size: 10;
+
+body {
+  background-color: var(--primary-background-color);
+}
+
+.footer {
+  padding: 10px 0;
+  #{$footercopyright} {
+    text-align: center;
+    #{$property}: gray;
+    font-size: #{$size}rem;
+    width: #{$size + 0%};
+  }
+}
+$number: 1;
+$prefix: ".col-";
+// $breakpoint: "md";
+$breakpoint: "";
+$selector: "";
+@if $breakpoint != "" {
+  $selector: $prefix + $breakpoint + "-" + $number;
+} @else {
+  $selector: $prefix + $number;
+}
+#{$selector} {
+  width: 50%;
+}

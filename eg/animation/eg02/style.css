@@ -1,0 +1,53 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+.box {
+  margin: 30px auto;
+  display: flex;
+  align-items: flex-end;
+  height: 150px;
+}
+.box > * {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(86, 189, 232);
+  display: inline-block;
+  border-radius: 20px;
+  margin-left: 10px;
+  animation-name: move;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.box .col1 {
+  animation-delay: 0.2s;
+}
+.box .col2 {
+  animation-delay: 0.4s;
+}
+.box .col3 {
+  animation-delay: 0.6s;
+}
+.box .col4 {
+  animation-delay: 0.8s;
+}
+@keyframes move {
+  from {
+    height: 50px;
+  }
+  25% {
+    height: 100px;
+  }
+  50% {
+    height: 150px;
+  }
+  75% {
+    height: 100px;
+  }
+  to {
+    height: 50px;
+  }
+}

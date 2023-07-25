@@ -1,0 +1,13 @@
+.span {
+  width: 100px;
+  border: 1px solid;
+  display: inline-block;
+}
+/* tai sao img lai se duoc width va height
+    - inline: 
+        -replace =block 
+        -non-replace
+tao sao no lai cach nhau mot khoang trang */
+img {
+  width: 200px;
+}

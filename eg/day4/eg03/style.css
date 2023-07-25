@@ -1,0 +1,4 @@
+.todos input:checked ~ span {
+  color: red;
+}
+/* chon the span la the cung cap dung sau input khi duoc checked cung la con cua class=tudos */

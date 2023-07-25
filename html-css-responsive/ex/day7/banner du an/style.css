@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+@font-face {
+  font-family: Asap;
+  src: url(../../../Roboto/SFUTradeGothic-BoldCondensedTwenty.woff2);
+}
+@font-face {
+  font-family: Asap-2;
+  src: url(../../../Roboto/Asap-Medium.ttf);
+}
+@font-face {
+  font-family: sfu;
+  src: url(../../../Roboto/SFUTradeGothic-BoldCondensedTwenty.woff2);
+}
+.banner {
+  background: url(https://cdn.houseviet.vn/images/project/23042023/ha-noi-melody-residences-cover.jpg);
+  position: relative;
+  background-repeat: no-repeat;
+  width: 1297;
+  height: 405px;
+}
+.banner .content {
+  width: 650px;
+  height: 180px;
+  background-color: aliceblue;
+  opacity: 0.85;
+  position: relative;
+  left: 140px;
+  top: 100px;
+  border-radius: 5px;
+}
+.banner .content p {
+  display: block;
+  margin-top: 10px;
+  padding-left: 30px;
+}
+.banner p:nth-of-type(1) {
+  color: #bf4240;
+  font-family: Asap;
+  font-size: 30px;
+  word-spacing: 3px;
+  letter-spacing: 1px;
+  padding-top: 10px;
+  font-weight: 400;
+}
+.banner p:nth-of-type(2) {
+  line-height: 1.2;
+  color: #3f3424;
+  font-family: Asap-2;
+}
+.banner p:nth-of-type(3) {
+  line-height: 2;
+  color: #3f3424;
+  font-family: Asap-2;
+}
+.banner .content p i {
+  padding: 5px;
+}
+.banner .price p {
+  position: absolute;
+  width: 180px;
+  height: 70px;
+  background-color: #bf4240;
+  color: white;
+  line-height: 70px;
+  padding: 0px;
+  text-align: center;
+  border-radius: 10px;
+  left: calc(100% - 180px - 40px);
+  font-family: sfu;
+  opacity: 1;
+}

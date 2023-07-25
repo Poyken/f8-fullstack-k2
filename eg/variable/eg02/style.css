@@ -1,0 +1,19 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  outline: none;
+}
+.box {
+  --color: green;
+  --color-hover: blue;
+  color: var(--color);
+}
+.box h2 {
+  color: var(--color);
+  display: inline-block;
+}
+.box h2:hover {
+  /* color: var(--color-hover); */
+  --color: var(--color-hover);
+}

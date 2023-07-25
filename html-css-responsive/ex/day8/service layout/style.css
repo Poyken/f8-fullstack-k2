@@ -1,0 +1,51 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+@font-face {
+  font-family: Roboto;
+  src: url(../../../Roboto/Roboto-Regular.ttf);
+}
+body {
+  font-family: Roboto;
+}
+.title {
+  text-align: center;
+  line-height: 50px;
+}
+.title h1 {
+  font-size: 35px;
+}
+.product ul li {
+  width: 380px;
+  text-align: center;
+  margin: 40px 0px;
+  position: relative;
+}
+.product ul {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 10px 100px 0;
+}
+.product ul li p:nth-of-type(1) {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 50px;
+}
+.product ul li a {
+  background-color: #29378d;
+  position: absolute;
+  top: 265px;
+  left: 125px;
+  padding: 10px 25px;
+}

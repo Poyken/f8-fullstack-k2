@@ -1,0 +1,14 @@
+.pri {
+  border: none;
+  outline: none;
+  background-color: #ccc;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.pri {
+  background: red;
+  color: #fff;
+}
+
+/*# sourceMappingURL=style.css.map */

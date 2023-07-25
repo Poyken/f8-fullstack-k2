@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Open Sans;
+}
+.menu ul {
+  background-color: #ddd;
+  color: #666;
+  list-style-type: none;
+  text-align: center;
+}
+.menu li {
+  display: inline-block;
+  width: 150px;
+  height: 50px;
+  line-height: 50px;
+}
+.menu i {
+  padding: 5px;
+}
+.menu li a {
+  text-decoration: none;
+  color: #666;
+  display: block;
+  /* text-align: left; */
+}
+.menu li ul li {
+  text-align: left;
+  width: 200px;
+}
+.menu a:hover {
+  background-color: #2da5da;
+  color: white;
+}
+.sub-about-us,
+.sub-port,
+.sub-new {
+  display: none;
+}
+.menu li {
+  position: relative;
+}
+.sub-about-us,
+.sub-port,
+.sub-new {
+  display: none;
+  position: absolute;
+  box-shadow: 0 0 1px 1px #ccc;
+}
+.menu li:nth-of-type(2):hover .sub-about-us {
+  display: block;
+}
+.menu li:nth-of-type(3):hover .sub-new {
+  display: block;
+}
+.menu li:nth-of-type(4):hover .sub-port {
+  display: block;
+}
+.menu > ul > li {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+}
+li > i[class="fas fa-phone-alt"] {
+  margin-left: 300px;
+}

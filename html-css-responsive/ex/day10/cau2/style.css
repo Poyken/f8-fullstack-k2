@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: sans-serif;
+}
+.content {
+  display: none;
+  transform-origin: top;
+  border: 1px solid red;
+  animation: move 1s linear;
+}
+.page:checked + .content {
+  display: block;
+}
+@keyframes move {
+  from {
+    transform: rotateX(0deg);
+  }
+  to {
+    transform: rotateX(90deg);
+  }
+}
+/* dung 1 lop quay xuong va 1 lop quay len cung luc de tao hieu ung */

@@ -1,0 +1,18 @@
+.box {
+  border: 1px solid black;
+  border-top-left-radius: 10px;
+}
+.content {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  border-radius: 50%;
+}
+.btn {
+  border: none;
+  background-color: red;
+  color: white;
+  padding: 5px 20px;
+  border-radius: 99px;
+  /* mac dinh de 99px de sau nay khi thay doi height cua border thi van giu duoc bo tron  */
+}

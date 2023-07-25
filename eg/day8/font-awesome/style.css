@@ -1,0 +1,24 @@
+.home i:nth-child(1) {
+  color: red;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+.social {
+  list-style: none;
+  width: 300px;
+  margin: 30px auto;
+}
+.social li a {
+  text-decoration: none;
+  color: black;
+}
+.social li a::before {
+  content: "\f09a";
+  font-family: "Font Awesome 6 Brands";
+  font-weight: 400;
+  /* <i class="fa-brands fa-facebook"></i> */
+}

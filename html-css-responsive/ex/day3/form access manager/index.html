@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Access Manager</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form action="#">
+      <table>
+        <tr>
+          <td>
+            <label for="username">Username</label>
+          </td>
+          <td><input type="text" name="username" id="username" /></td>
+        </tr>
+        <tr>
+          <td><label for="password">Password</label></td>
+          <td><input type="password" name="password" id="password" /></td>
+        </tr>
+        <tr>
+          <td>
+            <label for="cityofem">City of <br />Employment</label>
+          </td>
+          <td><input type="text" name="cityofem" id="cityofem" /></td>
+        </tr>
+        <tr>
+          <td><label for="webserver">Web Server</label></td>
+          <td>
+            <select name="webserver" id="webserver">
+              <option value="0">--Choose a server--</option>
+              <option value="1">server1</option>
+              <option value="2">server2</option>
+              <option value="3">server3</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td rowspan="4">
+            <label>Please Specify <br />your role</label>
+          </td>
+          <td><input type="radio" name="role" value="Admin" />Admin</td>
+        </tr>
+        <tr>
+          <td><input type="radio" name="role" value="Engineer" />Engineer</td>
+        </tr>
+        <tr>
+          <td><input type="radio" name="role" value="Manager" />Manager</td>
+        </tr>
+        <tr>
+          <td><input type="radio" name="role" value="Guest" />Guest</td>
+        </tr>
+        <tr>
+          <td rowspan="3">
+            <label>Single Sign-on <br />to the following</label>
+          </td>
+          <td><input type="checkbox" name="sign-on" value="Mail" />Mail</td>
+        </tr>
+        <tr>
+          <td>
+            <input type="checkbox" name="sign-on" value="Payroll" />Payroll
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input
+              type="checkbox"
+              name="sign-on"
+              value="Self-service"
+            />Self-service
+          </td>
+        </tr>
+      </table>
+      <div><button>Login</button> <button>Reset</button></div>
+    </form>
+  </body>
+</html>

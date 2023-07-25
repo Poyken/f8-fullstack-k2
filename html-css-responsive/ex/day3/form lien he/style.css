@@ -1,0 +1,43 @@
+html {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+hr {
+  background-color: orange;
+  height: 5px;
+  width: 5%;
+  margin: -20px auto 20px 0px;
+  border: 0px;
+}
+th {
+  text-align: left;
+  font-size: 20px;
+  padding-bottom: 30px;
+}
+td {
+  padding: 5px;
+}
+.col-second {
+  padding-left: 200px;
+}
+i {
+  margin: 10px;
+}
+input {
+  width: 150%;
+  height: 30px;
+  padding-left: 10px;
+}
+div {
+  margin: 20px;
+}
+textarea {
+  width: 150%;
+  height: 150px;
+  padding-left: 10px;
+}
+button {
+  background-color: black;
+  color: white;
+  width: 40%;
+  height: 40px;
+}

@@ -1,0 +1,37 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.box {
+  border: 1px solid red;
+  width: 300px;
+  margin: 30px auto;
+}
+.box ul {
+  /* list-style-position: inside; */
+  /* list-style-position: inside; bieu tuong li vao trong */
+  /* list-style-type: disc; mac dinh  */
+  /* list-style-type: upper-alpha; */
+  list-style: inside upper-alpha;
+}
+/* .box ul li {
+  background: url(../../../image/angle-right.png) no-repeat left center / 16px;
+  padding-left: 16px;
+} */
+.box ul li::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url(../../../image/angle-right.png) no-repeat left center / 16px;
+  /* float: left; */
+  vertical-align: middle;
+  /* sap xep noi dung theo chieu doc  */
+  /* margin-top: 10px; */
+}
+.box ul li {
+  line-height: 2;
+}

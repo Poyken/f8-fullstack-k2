@@ -1,0 +1,53 @@
+@font-face {
+  font-family: roboto;
+  src: url(../../../Roboto/Roboto-Thin.ttf);
+  font-weight: 100;
+}
+@font-face {
+  font-family: boldroboto;
+  src: url(../../../Roboto/Roboto-Bold.ttf);
+  font-weight: 700;
+}
+body {
+  background-color: #ebf5fe;
+  display: flex;
+  flex-wrap: wrap;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+  height: 300px;
+  background-color: white;
+  margin: 23px;
+  border: 2px solid transparent;
+}
+.box:hover {
+  border: 2px solid red;
+  border-radius: 10px;
+}
+.img {
+  display: flex;
+}
+.img > img {
+  width: 128px;
+  height: 128px;
+  border-radius: 99px;
+  margin-right: 15px;
+}
+.img > p {
+  font-size: 40px;
+  font-family: boldroboto;
+  margin-bottom: 0px;
+}
+div:not([class="img"]) > p {
+  font-family: roboto;
+}
+div a {
+  margin-top: 20px;
+  text-decoration: none;
+  font-family: boldroboto;
+}
+.box > * {
+  margin: 10px 20px 0 20px;
+}

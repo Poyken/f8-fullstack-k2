@@ -1,0 +1,7 @@
+.first h2 ~ h3 {
+  color: red;
+}
+/* the h3 cung cap nam sau h2 la con cua the co class=last */
+.last h2 ~ h3 {
+  color: green;
+}

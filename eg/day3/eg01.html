@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <!-- form
+    ------------------------------------------------
+    biểu mẫu cho phép người dùng nhập dữ liệu lên sẻver
+    có thể có nhiều form và ko lồng nhau
+    form có nhiều trường
+
+    ------------------------------------------------
+    --cấu tạo form
+    action form: url request
+    method: http method
+    get
+    post
+    name :server lấy dữ liệu
+ -->
+  <body>
+    <form
+      action="https://api-gateway.fullstack.edu.vn/action_page.php"
+      method="get"
+    >
+      <div>
+        <label for="">Email</label>
+        <input type="email" name="email" placeholder="Email" required />
+      </div>
+      <div>
+        <label for="">Mật Khẩu</label>
+        <input type="password" name="password" placeholder="password" />
+      </div>
+      <div>
+        <label> bạn biết đến f8 ntn</label>
+        <label>
+          <input type="checkbox" name="source" id="" value="unknow" /> không
+          biết
+        </label>
+        <label>
+          <input type="checkbox" name="source" id="" value="gg" checked /> không
+          biết
+        </label>
+        <label>
+          <input type="checkbox" name="source" id="" value="fb" /> không biết
+        </label>
+      </div>
+      <div>
+        <label> bạn biết đến f8 ntn</label>
+        <label>
+          <input type="radio" name="demo" id="" value="unknow" /> không biết
+        </label>
+        <label>
+          <input type="radio" name="demo" id="" value="gg" checked /> không biết
+        </label>
+        <label>
+          <input type="radio" name="demo" id="" value="fb" /> không biết
+        </label>
+      </div>
+      <div>
+        <label for="avatar">avatar</label>
+        <input type="file" name="avatar" id="avatar" />
+      </div>
+      <div>
+        <label for="birthday">sinh nhật</label>
+        <input type="date" name="birthday" id="birthday" />
+      </div>
+      <div>
+        <label for="price">giá</label>
+        <input type="range" name="price" id="price" value="50" step="0.1" />
+      </div>
+      <div>
+        <label for="province">tỉnh thành</label>
+        <select name="province" id="province">
+          <option value="" hidden>chọn tỉnh thành</option>
+          <optgroup label="hn">
+            <option value="1">hn</option>
+            <option value="1">hn</option>
+          </optgroup>
+          <option value="1">hn</option>
+          <option value="1">bg</option>
+        </select>
+      </div>
+      <!-- mac dinh -->
+      <button type="submit">đăng kí</button>
+      <button type="reset">reset</button>
+    </form>
+  </body>
+</html>

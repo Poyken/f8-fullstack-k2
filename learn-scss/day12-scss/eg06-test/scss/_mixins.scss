@@ -1,0 +1,36 @@
+@mixin center($type) {
+  > * {
+    background-color: red;
+    padding: 20px;
+    margin: 20px;
+  }
+  @if $type == "display" {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  @if $type == "potision" {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  @if $type == "text" {
+    text-align: center;
+  }
+  @if $type == "margin" {
+    margin: 0 auto;
+  }
+  @if $type == "" {
+  }
+}
+@mixin gird($columns, $spacing) {
+  display: flex;
+  row-gap: $spacing;
+  flex-wrap: wrap;
+  //   margin-left: calc(-1 * $spacing);
+  > * {
+    width: calc(100% / $columns - $spacing);
+    margin-left: $spacing;
+  }
+}

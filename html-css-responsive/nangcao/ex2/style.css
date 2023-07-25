@@ -1,0 +1,33 @@
+body {
+  background-color: #333;
+}
+.Heart-shaped {
+  position: relative; /* parent position */
+  width: 200px;
+  height: 200px;
+  margin: 200px auto;
+  background-color: red;
+}
+.Heart-shaped:before {
+  position: absolute; /* vị trí phụ thuộc vào parent position */
+  width: 200px;
+  height: 200px;
+  content: ""; /* khởi tạo rỗng cho thẻ giả */
+  border-radius: 50%; /* bo tròn 4 góc của div để tạo hình tròn */
+  background-color: red;
+  bottom: 0px;
+  left: -100px; /* vì div parent rộng 200px nên di chuyển before sang trái 100px để tâm before nằm trên cạnh dọc của div parent */
+}
+.Heart-shaped:after {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  content: "";
+  border-radius: 50%;
+  background-color: red;
+  top: -100px;
+  right: 0px;
+}
+.Heart-shaped {
+  transform: rotate(45deg);
+}

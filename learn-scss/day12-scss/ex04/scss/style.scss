@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+@import "mixins";
+.container {
+  @include gird(3, 10px);
+  background-color: #ccc;
+  margin-top: 20px;
+  .item {
+    background-color: orange;
+    padding: 20px;
+    text-align: center;
+  }
+}
+.list {
+  @include gird(4, 20px);
+  background-color: #ccc;
+  margin-top: 30px;
+  .list-item {
+    background-color: blueviolet;
+    padding: 20px;
+    text-align: center;
+  }
+}
+.news {
+  @include gird(5, 30px);
+  margin-top: 10px;
+  background-color: #ccc;
+  > * {
+    background-color: brown;
+    padding: 20px;
+    text-align: center;
+  }
+}

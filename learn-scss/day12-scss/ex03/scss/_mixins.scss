@@ -1,0 +1,11 @@
+// @mixin size{
+//     width: 200px;
+//     height: 200px;
+// }
+@mixin size($width: 100px, $height: $width) {
+  width: $width;
+  height: $height;
+}
+@mixin rounded($tl: 10px, $tr: $tl, $br: $tl, $bl: $tl) {
+  border-radius: $tl $tr $bl $br;
+}

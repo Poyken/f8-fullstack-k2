@@ -1,0 +1,58 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.menu {
+  background-color: green;
+}
+.menu ul {
+  max-width: 1400px;
+  margin: 0 auto;
+  font-size: 0;
+}
+.menu a {
+  display: block;
+  color: #fff;
+  padding: 5px 15px;
+}
+.menu li {
+  position: relative;
+}
+.menu > ul > li {
+  display: inline-block;
+}
+.menu > ul > li a {
+  font-size: 1rem;
+}
+.menu > ul li:hover > a {
+  background-color: red;
+}
+.menu > ul li:hover > ul {
+  display: block;
+}
+.menu > ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: chocolate;
+  min-width: 200px;
+}
+.menu > ul ul a {
+  border: 1px solid chartreuse;
+}
+.menu > ul ul ul {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 100%;
+}

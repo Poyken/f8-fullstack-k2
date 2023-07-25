@@ -1,0 +1,18 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.box {
+  background-color: red;
+  width: 50vw;
+  height: 50vh;
+}
+/* width, height chi tac dung voi the block va cac the lien quan den form */
+.content {
+  border: none;
+  width: 50%;
+}
+/* vw= viewport width 
+    vh =viewport height 
+    viewport la khung nhin duoc hien thi tren browser
+    */

@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  min-height: 100vh;
+  background: url("https://picsum.photos/200/200") no-repeat;
+  margin: 0 auto;
+}
+.example {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+}
+.sprite {
+  width: 50px;
+  height: 50px;
+  background-image: url("https://picsum.photos/200/200");
+  background-repeat: no-repeat;
+}
+
+.sprite-1 {
+  background-position: 0 0;
+}
+
+.sprite-2 {
+  background-position: -50px 0;
+}
+
+.sprite-3 {
+  background-position: -100px 0;
+}
+
+.sprite-4 {
+  background-position: -150px 0;
+}

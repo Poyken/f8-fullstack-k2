@@ -1,0 +1,14 @@
+.content {
+  width: 800px;
+  height: 800px;
+  background-color: green;
+  min-height: 400px;
+}
+.box .img {
+  display: inline-block;
+  width: 70%;
+}
+.box .img img {
+  max-width: 100%;
+  height: auto;
+}

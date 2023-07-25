@@ -1,0 +1,34 @@
+div {
+  background-color: #6469a2;
+  padding: 5px 0 0 30px;
+  border-radius: 10px;
+}
+div:hover .email::placeholder {
+  color: orange;
+}
+div:hover input {
+  background-color: #ddd;
+}
+div:hover button {
+  background-color: orange;
+  color: white;
+}
+p {
+  color: white;
+}
+p:first-child {
+  font-size: 30px;
+}
+p:first-child > span {
+  color: orange;
+}
+button {
+  background-color: yellow;
+  margin-bottom: 20px;
+  padding: 7px 20px;
+  text-align: center;
+  border: none;
+}
+input {
+  padding: 5px 10px;
+}

@@ -1,0 +1,31 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.songs {
+  width: 300px;
+  border: 1px solid red;
+  margin: 30px auto;
+  padding: 15px;
+  counter-reset: song-item;
+}
+.songs .song-item {
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+  counter-increment: song-item;
+}
+.songs .song-item::before {
+  content: "!" counter(song-item);
+  width: 30px;
+  height: 30px;
+  display: block;
+  float: left;
+  background: red;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+  /* line-height: =height  can giua theo chieu doc; */
+  margin-right: 10px;
+}

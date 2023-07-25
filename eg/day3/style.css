@@ -1,0 +1,22 @@
+.title{
+    color: red !important;
+    ;
+}
+#title{
+    color: green;
+}
+h2{
+    color: brown;
+}
+.element h1{
+    color: blueviolet;
+}
+.element> h1{
+    color: yellow;
+}
+.element.children{
+    color:black
+}
+.big-title{
+    color: blue;
+}

@@ -1,0 +1,39 @@
+.first:nth-of-type(1):checked ~ p {
+  font-size: inherit;
+}
+.second:nth-of-type(1):checked ~ p {
+  font-size: inherit;
+}
+.third:nth-of-type(1):checked ~ p {
+  font-size: inherit;
+}
+.first:nth-of-type(1):checked ~ label i[class^="fas fa-plus"] {
+  opacity: 0;
+}
+.second:nth-of-type(1):checked ~ label i[class^="fas fa-plus"] {
+  opacity: 0;
+}
+.third:nth-of-type(1):checked ~ label i[class^="fas fa-plus"] {
+  opacity: 0;
+}
+p {
+  margin-left: 20px;
+  font-size: 0;
+}
+input[type="checkbox"] {
+  display: none;
+}
+label {
+  display: flex;
+  background-color: orange;
+  color: white;
+  padding: 10px;
+  margin: 10px;
+}
+i {
+  margin-right: 5px;
+}
+i[class="fas fa-minus"] {
+  position: relative;
+  left: -19px;
+}

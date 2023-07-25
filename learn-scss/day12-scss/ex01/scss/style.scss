@@ -1,0 +1,22 @@
+@import 'variables';
+.news{
+    &-list{
+        display: flex;
+    }
+    &-item{
+        margin: 10px;
+        :hover{
+            background-color: #ccc;
+        }
+        &__thumb{
+            color: $black-color
+        }
+        &__title{
+            font-size: 20px;
+        }
+        &__desc{
+            background-color: red;
+        }
+    }
+
+}

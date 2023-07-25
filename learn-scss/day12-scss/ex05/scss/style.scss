@@ -1,0 +1,25 @@
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+@import "mixins";
+.container {
+  @include gird(3, 10px);
+  background-color: #ccc;
+  padding: 10px;
+  .item {
+    background-color: orange;
+    padding: 20px;
+    text-align: center;
+  }
+  @include screen(tablet) {
+    //content
+    @include gird(2, 10px);
+  }
+  @include screen(mobile) {
+    //content
+    @include gird(1, 10px);
+  }
+}

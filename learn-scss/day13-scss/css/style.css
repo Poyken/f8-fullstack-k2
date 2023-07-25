@@ -1,0 +1,23 @@
+:root {
+  --primary-background-color: red;
+}
+
+body {
+  background-color: var(--primary-background-color);
+}
+
+.footer {
+  padding: 10px 0;
+}
+.footer .copyright {
+  text-align: center;
+  color: gray;
+  font-size: 10rem;
+  width: 10%;
+}
+
+.col-1 {
+  width: 50%;
+}
+
+/*# sourceMappingURL=style.css.map */

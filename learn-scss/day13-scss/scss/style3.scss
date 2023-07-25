@@ -1,0 +1,47 @@
+// @for $i from 1 through 12 {
+//   .col-#{$i} {
+//     @if ($i % 2 != 0) {
+//       width: $i * 10%;
+//     } @else {
+//       width: $i * 15%;
+//     }
+//   }
+// }
+
+// $sizes: 20, 40, 60, 80, 8;
+// @each $size in $sizes {
+//   .col-#{$size} {
+//     width: #{$size * 2%};
+//   }
+// }
+
+// $sizes: (small, 20, normal), (medium, 200, italic), (larger, 2000, bold);
+// @each $name, $size, $style in $sizes {
+//   .col-#{$name} {
+//     @if ($name == "medium") {
+//       width: #{$size * 2%};
+//     } @else if($name == "larger") {
+//       width: #{$size * 20%};
+//     } @else {
+//       width: #{$size * 200%};
+//     }
+//     .col-#{$style} {
+//       @if ($style!=bold) {
+//         font-style: ($style);
+//       }
+//     }
+//   }
+// }
+// ~~~~~~~~~~~~~~~~
+// $sizes: (
+//   small: 20,
+//   medium: 40,
+//   large: 60,
+// );
+// @each $name, $size in $sizes {
+//   .col-#{$name} {
+//     @if ($size>30) {
+//       width: #{$size * 2%};
+//     }
+//   }
+// }

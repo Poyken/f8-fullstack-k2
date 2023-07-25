@@ -1,0 +1,8 @@
+/* .box:hover {
+  opacity: 0.5;
+} */
+.box img:hover {
+  /* opacity: 0.6;
+  filter: grayscale(0.9); */
+  filter: blur(1px);
+}

@@ -1,0 +1,83 @@
+@font-face {
+  font-family: Asap;
+  src: url(../../../Roboto/SFUTradeGothic-BoldCondensedTwenty.woff2);
+}
+@font-face {
+  font-family: Asap-2;
+  src: url(../../../Roboto/Asap-Medium.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: Asap-2;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.profile .info .background > img {
+  display: block;
+  width: 1200px;
+  height: 310px;
+  object-fit: cover;
+  object-position: 100% 70%;
+  position: relative;
+}
+.profile .info .background .logo > img {
+  position: absolute;
+  display: block;
+  width: 200px;
+  height: 130px;
+  object-fit: cover;
+  top: 150px;
+  left: 55px;
+}
+.profile .info .content p {
+  display: block;
+  position: absolute;
+  top: 160px;
+  left: 270px;
+  color: white;
+  line-height: 45px;
+  font-size: 15px;
+}
+.profile .info .content p span {
+  font-size: 25px;
+}
+body {
+  background-color: #ddd;
+}
+.profile .sidebar ul {
+  position: absolute;
+  top: 272px;
+  background-color: white;
+  width: 1200px;
+  font-size: 0;
+  text-align: right;
+  padding-right: 50px;
+}
+
+.profile .sidebar ul li {
+  display: inline-block;
+}
+.profile .sidebar ul li a:focus::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 5px;
+  background-color: red;
+  margin: 10px auto;
+}
+.profile .sidebar ul li a:focus {
+  color: red;
+}
+.profile .sidebar ul li a {
+  display: block;
+  padding: 10px 5px;
+  font-size: 1rem;
+  color: black;
+}

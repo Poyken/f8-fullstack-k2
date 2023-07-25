@@ -1,0 +1,44 @@
+html {
+  font-size: 16px;
+}
+.title {
+  color: rgba(65, 136, 80, 0.654);
+}
+/*type:
+Color name
+hexa :#+6 kytu
+rgb()
+hsl
+phan biet::
+- initial: ke thua gia tri mac dinh cua trinh duyet
+- inherit: ke thua gia tri cua the cha
+*/
+.description {
+  color: rgb(208, 29, 29);
+}
+.box .content h2 {
+  color: red;
+}
+.box .content h2:hover {
+  color: inherit;
+}
+/* hover chuyen ve mau mac dinh cua trinh duyet */
+
+.box {
+  font-size: 1.1em;
+}
+body {
+  color: rgb(28, 164, 46);
+  font-size: 1rem;
+}
+.box .content {
+  font-size: 1.1em;
+}
+/* the p mac dinh 16px */
+.box .content p {
+  /* font-size: 1.5em; */
+  /* the em lay tu the cha truc tiep gan nhat  */
+  /* font-size: 150%; */
+  font-size: 1.5rem;
+}
+/* rem lay tu the goc- html */

@@ -1,0 +1,125 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: sans-serif;
+}
+a {
+  text-decoration: none;
+  color: var(--color);
+}
+:root {
+  --time: 0.3s;
+  --color: #31a8f7;
+}
+.box {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  display: inline-block;
+  border-bottom-right-radius: 100%;
+  z-index: 1;
+}
+.icon {
+  width: 50px;
+  height: 10px;
+  background-color: var(--color);
+  position: relative;
+  z-index: 1;
+  margin-top: 30px;
+  margin-left: 10px;
+  transition: all var(--time) ease;
+}
+.icon:before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 10px;
+  background-color: var(--color);
+  top: 15px;
+  left: 0;
+  transition: all var(--time) ease;
+}
+.icon::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 10px;
+  background-color: var(--color);
+  top: -15px;
+  left: 0;
+  transition: all var(--time) ease;
+}
+.background {
+  position: absolute;
+  top: 0;
+  background-color: var(--color);
+  /* background-position: top left; */
+  transition: all var(--time) ease;
+  height: 0;
+  width: 0;
+  max-width: 100%;
+  max-height: 100%;
+}
+input:checked ~ .background {
+  width: 2000px;
+  height: 1000px;
+}
+input:checked + label .box .icon {
+  rotate: 180deg;
+}
+input:checked + label .box .icon::before {
+  top: 0;
+  width: 30px;
+  rotate: 45deg;
+  left: 23px;
+  transform-origin: 83%;
+}
+input:checked + label .box .icon::after {
+  top: 0;
+  left: 23px;
+  width: 30px;
+  rotate: -45deg;
+  transform-origin: 83%;
+}
+input:checked ~ ul {
+  z-index: -1;
+}
+ul {
+  position: absolute;
+  z-index: 1;
+  margin-top: 100px;
+  list-style: none;
+}
+li {
+  margin-top: 10px;
+}
+a {
+  font-weight: bold;
+  display: block;
+  padding: 5px 100px 5px 50px;
+}
+a:focus {
+  background-color: #ccc;
+}
+.title {
+  width: 500px;
+  position: absolute;
+  top: 300px;
+  left: 1000px;
+  color: white;
+  line-height: 80px;
+}
+h1 {
+  font-size: 50px;
+}
+p {
+  font-size: 30px;
+  font-weight: 100;
+}
+span {
+  font-size: 15px;
+  vertical-align: middle;
+}

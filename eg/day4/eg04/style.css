@@ -1,0 +1,15 @@
+/* p + h2,
+p + h2 + h2 {
+  color: red;
+}
+chon the h2 dung sau lien ke cung cap the p thanh do */
+
+/* chon 2 the sau thanh red khong su dung , ~ */
+
+h2 + h2 {
+  color: red;
+}
+/* chon the h2 dung sau lien ke cung cap the h2 thanh do 
+----------------------------------------------------------------
+vi sau the h2 van la the h2 nen tiep tuc duoc css thanh do
+vi truoc h2 dau tien ko co h2 nao nen ko duoc chon*/

@@ -1,0 +1,21 @@
+html {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+h1 {
+  text-align: center;
+}
+hr {
+  width: 5%;
+  height: 5px;
+  background-color: violet;
+  margin-bottom: 50px;
+}
+img {
+  width: 150px;
+}
+.photo {
+  margin: 30px 10px 40px 50px;
+}
+p {
+  font-weight: bold;
+}

@@ -1,0 +1,18 @@
+/* @font-face {
+  font-family: duc p;
+  /* ten font nen dat de tranh nham lan giua import thanh cong hay khong */
+/* neu co dau cach thi phai dua vao trong cap "" */
+/* src: url(../fonts/Roboto-Thin.ttf); */
+/* } */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap");
+p {
+  font-size: 20px;
+  line-height: 1.2;
+}
+/* gia tri cua line-height khong set tuyet doi thi set=gia tri*font size */
+/* neu khong co the duoc set fontsize thi lay root */
+body {
+  /* font-family: "duc p", "Time New Roman"; */
+  font-family: "Times New Roman", Times, serif;
+  /* -> time new roman duoc chuyen tu serif */
+}

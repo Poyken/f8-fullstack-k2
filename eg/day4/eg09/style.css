@@ -1,0 +1,7 @@
+.email {
+  color: red;
+}
+.email::placeholder {
+  color: green;
+  font-style: italic;
+}

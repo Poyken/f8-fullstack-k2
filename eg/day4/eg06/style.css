@@ -1,0 +1,17 @@
+/* * {
+  color: red;
+} */
+/* tat ca cac the deu duoc css */
+/* .content > * {
+  color: green;
+} */
+/* tat ca cac the la con cua content deu duoc css */
+.content > * {
+  border: 1px solid black;
+}
+/* css cho tat cac thanh phan */
+/* .content {
+  border: 1px solid black;
+} */
+/* css cho content */
+/* ">" chi tac dong vao con truc tiep */

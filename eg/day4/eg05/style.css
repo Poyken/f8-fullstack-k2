@@ -1,0 +1,31 @@
+ul li a {
+  color: violet;
+}
+/* bat ki the nao co target deu duoc css */
+ul li a[target] {
+  color: yellow;
+}
+ul li a[target="_blank"] {
+  color: red;
+}
+ul li a[target="_self"] {
+  color: blue;
+}
+/* min  */
+
+p[target] {
+  color: red;
+}
+/* ul li a[href="https://fullstack.edu.vn/"]
+{
+  color: green;
+} */
+/* tat ca ca the co href nhu vay deu duoc css */
+/* ul li a[href^="https://fullstack.edu.vn/"]
+{
+  color: blueviolet;
+} */
+/* ul li a[href*="https://fullstack.edu.vn/"]
+{
+  color: brown;
+} */
